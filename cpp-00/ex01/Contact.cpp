@@ -3,7 +3,6 @@
 
 Contact::Contact() : firstName(""), lastName(""), nickname(""), phoneNumber(""), darkestSecret("") {}
 
-// Сеттеры
 void Contact::setFirstName(const std::string &fname)
 {
 	firstName = fname;
@@ -29,7 +28,6 @@ void Contact::setDarkestSecret(const std::string &dsecret)
 	darkestSecret = dsecret;
 }
 
-// Геттеры
 std::string Contact::getFirstName() const
 {
 	return firstName;
