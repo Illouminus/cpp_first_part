@@ -12,10 +12,8 @@ void Replace::execute() const
 		return;
 	}
 
-	// Создание имени нового файла
 	std::string new_filename = filename + ".replace";
 
-	// Открытие нового файла для записи
 	std::ofstream outfile(new_filename.c_str());
 	if (!outfile.is_open())
 	{
