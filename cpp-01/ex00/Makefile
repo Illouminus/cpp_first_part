@@ -21,7 +21,7 @@ $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 
-$(OBJDIR)/%.o: %.cpp Zombie.hpp | $(OBJDIR)
+$(OBJDIR)/%.o: %.cpp $(OBJDIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 

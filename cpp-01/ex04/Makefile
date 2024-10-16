@@ -1,5 +1,4 @@
-
-NAME = zombie
+NAME = ex04
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -8,7 +7,9 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJDIR = obj
 
 
-SRCS = main.cpp Zombie.cpp zombieHorde.cpp
+SRCS = main.cpp \
+		Replace.cpp \
+
 
 
 OBJS = $(addprefix $(OBJDIR)/, $(SRCS:.cpp=.o))
