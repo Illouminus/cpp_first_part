@@ -13,5 +13,5 @@ public:
 
 	~Cat();
 
-	void makeSound() const;
+	void makeSound() const override;
 };

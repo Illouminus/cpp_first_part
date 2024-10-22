@@ -13,5 +13,5 @@ public:
 
 	~Dog();
 
-	void makeSound() const;
+	void makeSound() const override;
 };

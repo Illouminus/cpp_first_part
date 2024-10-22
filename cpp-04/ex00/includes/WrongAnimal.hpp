@@ -3,17 +3,19 @@
 
 class WrongAnimal
 {
-protected:
+  protected:
 	std::string type;
 
-public:
+  public:
 	WrongAnimal();
 	WrongAnimal(std::string type);
 	WrongAnimal(const WrongAnimal &src);
 
-	WrongAnimal operator=(const WrongAnimal &src);
+	WrongAnimal &operator=(const WrongAnimal &src);
 
 	~WrongAnimal();
 
 	void makeSound() const;
+
+	std::string getType() const;
 };

@@ -9,7 +9,9 @@ public:
 	WrongCat(std::string type);
 	WrongCat(const WrongCat &src);
 
-	WrongCat operator=(const WrongCat &src);
+	WrongCat &operator=(const WrongCat &src);
 
 	~WrongCat();
+
+	void makeSound() const;
 };

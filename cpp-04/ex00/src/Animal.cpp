@@ -1,9 +1,9 @@
-#include "includes/Animal.hpp"
+#include "Animal.hpp"
 #include <iostream>
 
 Animal::Animal() : type("Animal")
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default Animal constructor called" << std::endl;
 };
 
 Animal::Animal(std::string type) : type(type)
