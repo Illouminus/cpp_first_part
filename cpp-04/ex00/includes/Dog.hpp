@@ -9,7 +9,7 @@ public:
 	Dog(const std::string name);
 	Dog(const Dog &src);
 
-	Dog operator=(const Dog &src);
+	Dog &operator=(const Dog &src);
 
 	~Dog();
 
