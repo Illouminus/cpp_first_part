@@ -1,7 +1,7 @@
-NAME = ex00
+NAME = ex01
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -g -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 OBJDIR = obj
 
@@ -9,6 +9,7 @@ SRCS = main.cpp \
        src/Animal.cpp \
        src/Dog.cpp \
        src/Cat.cpp \
+	   src/Brain.cpp \
        src/WrongAnimal.cpp \
        src/WrongCat.cpp
 

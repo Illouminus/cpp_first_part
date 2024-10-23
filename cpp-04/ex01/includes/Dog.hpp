@@ -1,10 +1,14 @@
 #pragma once
 #include "Animal.hpp"
+#include "Brain.hpp"
 #include <string>
 
 class Dog : public Animal
 {
-public:
+  private:
+	Brain *brain;
+
+  public:
 	Dog();
 	Dog(const std::string name);
 	Dog(const Dog &src);

@@ -1,9 +1,12 @@
 #pragma once
 #include <string>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Cat : public Animal
 {
+private:
+	Brain *brain;
 public:
 	Cat();
 	Cat(const std::string type);
@@ -13,5 +16,5 @@ public:
 
 	~Cat();
 
-	void makeSound() const ;
+	void makeSound() const;
 };
